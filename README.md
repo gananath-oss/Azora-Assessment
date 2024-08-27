@@ -1,14 +1,47 @@
-# Azora-Assessment
- This project adds authentication using tokens, create and signup, loading and button animation, animation background, basic CRUD, view profile, and logout functionality with three main pages. I used ckakra-UI for styling and context API for used user data. this is a MERN stack project. I am attaching the endpoint in the email body.  
+#App Documentation
+1. App Architecture
+1.1 Frontend:
 
-#front end .env file body
-REACT_APP_API_BASE_URL=http://localhost:5001
+Framework: React.js
+Styling: Chakra UI
+State Management: Context API (ItemsState)
+Routing: React Router
+Animations: Framer Motion
+HTTP Client: Axios
+1.2 Backend:
 
+Server: Node.js with Express
+Database: MongoDB
+Authentication: JSON Web Tokens (JWT)
+API Design: RESTful APIs
+1.3 Directory Structure:
 
-#default .env file useful for backend
+-/src: Contains all the source code for the React frontend.
+-/components: Reusable UI components.
+-/pages: Page components.
+-/Context: Context Providers for state management.
+-/styles: Styling components.
 
-PORT = 5001
-MONGO_URI= mongodb+srv://ganaTest:Abc123@chatapp.moew4.mongodb.net/?retryWrites=true&w=majority&appName=ChatApp
-JWT_SECRET = GananathAthukorala
-NODE_ENV=production
-CLIENT_URL=http://localhost:3000
+-/server: Contains backend code.
+-/models: Mongoose models.
+-/routes: API routes.
+-/controllers: Route handlers.
+-/middleware: Middleware functions.
+-/config: Configuration files.
+
+#State Management Approach
+Context API (ItemsState): Provides global state management for user data, selected items, and item list.
+
+#End points - Attache to the mail body
+
+#Database Schema - /moded file using Mongoose create schema
+
+#Setting Up and Running the Project Locally
+
+Prerequisites:
+Node.js (version 14 or above)
+MongoDB (running locally or using MongoDB Atlas)
+
+#For run
+-/backend - npm start port:5001
+-/frontend - npm start
